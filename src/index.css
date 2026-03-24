@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: var(--primary);
+  --color-surface: var(--surface);
+  --color-dark: var(--dark);
+  --color-accent: var(--accent);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
+}
+
+:root {
+  /* Navy & Brass (Coastal Elegance) - DARK */
+  --primary: #0F172A;
+  --surface: #1E293B;
+  --dark: #020617;
+  --accent: #D97706;
+  --text-main: #F8FAFC;
+  --text-muted: #94A3B8;
+  --border: #334155;
+}
+
+:root[data-mode='light'] {
+  /* Navy Light Mode */
+  --primary: #F8FAFC;
+  --surface: #FFFFFF;
+  --dark: #E2E8F0;
+  --accent: #D97706;
+  --text-main: #0F172A;
+  --text-muted: #475569;
+  --border: #CBD5E1;
+}
+
+[data-theme='terracotta'] {
+  /* Terracotta & Sand - DARK */
+  --primary: #3A2E2A;
+  --surface: #4A3B36;
+  --dark: #1C1513;
+  --accent: #E07A5F;
+  --text-main: #F5ECE9;
+  --text-muted: #BCAAA4;
+  --border: #5C4A44;
+}
+
+[data-theme='terracotta'][data-mode='light'] {
+  /* Terracotta Light Mode */
+  --primary: #FDFBF7; 
+  --surface: #FFFFFF;
+  --dark: #EAE6DF;
+  --accent: #E07A5F;
+  --text-main: #3A2E2A;
+  --text-muted: #79665F;
+  --border: #DBCFCA;
+}
+
+[data-theme='botanical'] {
+  /* Botanical & Peach - DARK */
+  --primary: #1E2B22;
+  --surface: #2B3D30;
+  --dark: #0D140F;
+  --accent: #FFBE98;
+  --text-main: #F0FDF4;
+  --text-muted: #86EFAC;
+  --border: #3F5E48;
+}
+
+[data-theme='botanical'][data-mode='light'] {
+  /* Botanical Light Mode */
+  --primary: #F4FBF6; 
+  --surface: #FFFFFF;
+  --dark: #E2F0E7;
+  --accent: #D96A3D; 
+  --text-main: #1E2B22;
+  --text-muted: #4B6353;
+  --border: #C8D8CF;
+}
+
+@layer base {
+  body {
+    background-color: var(--primary);
+    color: var(--text-main);
+    font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+}
+
+/* Custom scrollbar optimized for dynamic themes */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
