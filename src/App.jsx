@@ -2,8 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import TrustBar from './components/TrustBar';
 import PortfolioGrid from './components/PortfolioGrid';
 import Services from './components/Services';
+import Process from './components/Process';
+import PriceCalculator from './components/PriceCalculator';
+import DesignExplorer from './components/DesignExplorer';
+import MaterialShowcase from './components/MaterialShowcase';
 import Showcase from './components/Showcase';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
@@ -85,8 +90,13 @@ function App() {
       <CustomCursor />
       <Navbar />
       <Hero />
-      <PortfolioGrid />
+      <TrustBar />
       <Services />
+      <PortfolioGrid />
+      <DesignExplorer />
+      <Process />
+      <PriceCalculator />
+      <MaterialShowcase />
       <Showcase />
       <Testimonials />
       <About />
