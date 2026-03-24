@@ -62,17 +62,17 @@ const Hero = () => {
            transition={{ duration: 1, type: "spring", stiffness: 100, delay: 0.1 }}
            className="inline-block mb-8 px-6 py-3 border border-border rounded-full backdrop-blur-md bg-surface/80 text-accent font-bold tracking-[0.2em] uppercase text-xs shadow-xl transition-colors duration-500 cursor-default"
         >
-          Premium Interior Design
+          Independent Interior Designer | Delhi NCR
         </motion.div>
         
         <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-bold text-text-main leading-[1.1] mb-10 tracking-tight transition-colors duration-500 flex flex-wrap justify-center gap-x-5 gap-y-2">
-          {titleWords.map((word, i) => (
+          {"Where Luxury Meets Functionality".split(" ").map((word, i) => (
             <motion.span
               key={i}
               initial={{ opacity: 0, y: 50, rotateX: -90 }}
               animate={{ opacity: 1, y: 0, rotateX: 0 }}
               transition={{ duration: 0.8, delay: 0.2 + i * 0.15, type: "spring", stiffness: 80 }}
-              className={`inline-block origin-bottom ${word === 'Experiences' ? 'text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600' : ''}`}
+              className={`inline-block origin-bottom ${word === 'Functionality' ? 'text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600' : ''}`}
             >
               {word}
             </motion.span>
@@ -85,7 +85,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="text-xl md:text-2xl text-text-muted mb-16 max-w-3xl mx-auto font-light leading-relaxed transition-colors duration-500"
         >
-          We create timeless, functional, and deeply personal interiors optimized for luxury living and seamless conversion.
+          Bespoke interior design for modern living across the National Capital Region. I craft highly personal, timeless spaces optimized for your lifestyle.
         </motion.p>
         
         <motion.div 

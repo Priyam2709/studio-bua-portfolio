@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
+import { MessageCircle } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TrustBar from './components/TrustBar';
@@ -10,6 +11,8 @@ import PriceCalculator from './components/PriceCalculator';
 import DesignExplorer from './components/DesignExplorer';
 import MaterialShowcase from './components/MaterialShowcase';
 import Showcase from './components/Showcase';
+import Categories from './components/Categories';
+import Blog from './components/Blog';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
@@ -86,11 +89,25 @@ const CustomCursor = () => {
 
 function App() {
   return (
-    <div className="min-h-screen bg-primary text-text-main transition-colors duration-500 overflow-x-hidden cursor-none">
+    <div className="min-h-screen bg-primary text-text-main transition-colors duration-500 overflow-x-hidden cursor-none relative">
       <CustomCursor />
+      
+      {/* Global WhatsApp Action Node */}
+      <a 
+        href="https://wa.me/919999999999" 
+        target="_blank" 
+        rel="noreferrer"
+        className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[9000] bg-[#25D366] text-[#ffffff] w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:scale-110 hover:-translate-y-2 transition-all duration-300 group cursor-pointer"
+        aria-label="Direct Chat via WhatsApp"
+        style={{ pointerEvents: 'auto' }}
+      >
+        <MessageCircle fill="currentColor" stroke="none" size={28} className="md:w-8 md:h-8 text-white group-hover:scale-110 transition-transform" />
+      </a>
+
       <Navbar />
       <Hero />
       <TrustBar />
+      <Categories />
       <Services />
       <PortfolioGrid />
       <DesignExplorer />
@@ -98,6 +115,7 @@ function App() {
       <PriceCalculator />
       <MaterialShowcase />
       <Showcase />
+      <Blog />
       <Testimonials />
       <About />
       <Contact />

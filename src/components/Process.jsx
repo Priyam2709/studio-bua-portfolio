@@ -5,8 +5,8 @@ import { ClipboardList, PenTool, Gem, HardHat, Key } from 'lucide-react';
 const steps = [
   { id: 1, title: 'Consultation', icon: ClipboardList, desc: 'Initial meeting to understand your vision, lifestyle requirements, and budget constraints.' },
   { id: 2, title: 'Design Planning', icon: PenTool, desc: 'Development of 2D layouts and high-fidelity 3D renderings of your future space.' },
-  { id: 3, title: 'Material Selection', icon: Gem, desc: 'Curating premium finishes, custom textures, and bespoke furniture with our resident experts.' },
-  { id: 4, title: 'Execution', icon: HardHat, desc: 'Our dedicated execution team transforms the strategic blueprints into reality with clinical precision.' },
+  { id: 3, title: 'Material Selection', icon: Gem, desc: 'Curating premium finishes, custom textures, and bespoke furniture handpicked for your exact space.' },
+  { id: 4, title: 'Execution', icon: HardHat, desc: 'I personally oversee a trusted execution network to transform the blueprints into reality with clinical precision.' },
   { id: 5, title: 'Handover', icon: Key, desc: 'Final walkthrough and presentation of your beautifully completed, move-in-ready project.' },
 ];
 
